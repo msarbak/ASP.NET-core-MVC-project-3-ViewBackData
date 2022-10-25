@@ -18,6 +18,19 @@ namespace WebApplication3.Controllers
             return View();
         }
 
+        public IActionResult Deneme()
+        {
+            Ogrenci ogr = new Ogrenci();
+            ogr.OgrAd = "Huseyin";
+            ogr.OgrSoyad = "Eski";
+            ogr.OgrNo = "987";
+
+            ViewBag.mesaj1 = "ViewBag mesajimiz";
+            ViewData["mesaj2"] = "ViewData mesajimiz";
+            TempData["mesaj3"] = "TempData mesajimiz";
+            return View(ogr);
+        }
+
         public IActionResult Privacy()
         {
             return View();
