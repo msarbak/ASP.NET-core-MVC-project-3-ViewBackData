@@ -28,6 +28,9 @@ namespace WebApplication3.Controllers
             ViewBag.mesaj1 = "ViewBag mesajimiz";
             ViewData["mesaj2"] = "ViewData mesajimiz";
             TempData["mesaj3"] = "TempData mesajimiz";
+
+            ViewData["mesaj4"] = ogr;
+            ViewBag.mesaj5 = ogr;
             return View(ogr);
         }
 
