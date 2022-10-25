@@ -8,3 +8,18 @@
 Ad: @Model.OgrAd <br />
 Soyad: @Model.OgrSoyad <br />
 No: @Model.OgrNo <br />
+
+********************** <br />
+
+@{
+    string m1 = ViewBag.mesaj1;
+    string m2 = Convert.ToString(ViewData["mesaj2"]);
+    string m3 = TempData["mesaj3"].ToString(); 
+    //2 toString de ayni
+
+}
+
+
+Viewbag: @m1 <br />
+Viewdata: @m2 <br />
+Tempdata: @m3 <br />
