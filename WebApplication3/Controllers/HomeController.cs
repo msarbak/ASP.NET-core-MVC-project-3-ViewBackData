@@ -25,6 +25,14 @@ namespace WebApplication3.Controllers
             ogr.OgrSoyad = "Eski";
             ogr.OgrNo = "987";
 
+            bolum b = new bolum();
+            b.BolumId = 12;
+            b.BolumAdi = "bilgiasyar Muh";
+
+            OgrBol ob= new OgrBol();
+            ob.ogr = ogr;
+            ob.blm = b;
+
             ViewBag.mesaj1 = "ViewBag mesajimiz";
             ViewData["mesaj2"] = "ViewData mesajimiz";
             TempData["mesaj3"] = "TempData mesajimiz";
