@@ -33,13 +33,16 @@ namespace WebApplication3.Controllers
             ob.ogr = ogr;
             ob.blm = b;
 
+            //return View(ogr);
+            //return View(ob);
+
             ViewBag.mesaj1 = "ViewBag mesajimiz";
             ViewData["mesaj2"] = "ViewData mesajimiz";
             TempData["mesaj3"] = "TempData mesajimiz";
 
             ViewData["mesaj4"] = ogr;
             ViewBag.mesaj5 = ogr;
-            //return View(ogr);
+            
             return RedirectToAction("Deneme2");
         }
 
