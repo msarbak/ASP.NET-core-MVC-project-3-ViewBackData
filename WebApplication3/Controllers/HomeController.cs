@@ -31,7 +31,13 @@ namespace WebApplication3.Controllers
 
             ViewData["mesaj4"] = ogr;
             ViewBag.mesaj5 = ogr;
-            return View(ogr);
+            //return View(ogr);
+            return RedirectToAction("Deneme2");
+        }
+
+        public IActionResult Deneme2()
+        {
+            return View();
         }
 
         public IActionResult Privacy()
