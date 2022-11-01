@@ -27,7 +27,7 @@ namespace WebApplication3.Controllers
 
             bolum b = new bolum();
             b.BolumId = 12;
-            b.BolumAdi = "bilgiasyar Muh";
+            b.BolumAdi = "bilgisayar Muh";
 
             OgrBol ob= new OgrBol();
             ob.ogr = ogr;
